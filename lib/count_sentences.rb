@@ -4,8 +4,7 @@ class String
 
   def sentence?
     # self[-1] == "."
-    self.ends_with?(".")
-      
+    self.end_with?(".")
   end
 
   def question?
