@@ -16,7 +16,9 @@ class String
   end
 
   def count_sentences
-    new_array = self.split("! " || "? " || ". ")
+    new_array = self.split("! ")
+    new_array = new_array.split(". ")
+    new_array = new_array.split("? ")
     binding.pry
     return new_array.count 
   end
